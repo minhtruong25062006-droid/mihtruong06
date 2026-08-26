@@ -5,7 +5,7 @@ const siteConfig = {
     siteName: "Minh Trường",
     username: "@minhtruong06",
     avatar: "https://cdn.phototourl.com/free/2026-08-26-68a0da81-fa3e-4454-9aab-223a48c42b93.jpg",
-    bio: "Tổng hợp những sản phẩm công nghệ và setup góc học tập đáng mua nhất.",
+    bio: "Tổng hợp những sản phẩm hữu ích cho học tập, làm việc, giải trí và cuộc sống đáng mua nhất.",
     
     // Mạng xã hội (Nếu không dùng kênh nào, hãy để rỗng "")
     socials: {
@@ -94,7 +94,7 @@ const products = [
         featured: false,
         name: "[DỮ LIỆU DEMO] Đèn LED Bàn Học",
         description: "Chống cận, 3 chế độ sáng, bảo vệ mắt.",
-        image: "https://images.unsplash.com/photo-1563241527-3004b7be0188?w=500",
+        image: "https://share.google/WdPQOUQCQPVqJ8lPv",
         price: "120.000đ",
         oldPrice: "180.000đ",
         discount: "-33%",
