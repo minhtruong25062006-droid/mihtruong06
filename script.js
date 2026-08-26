@@ -3,15 +3,15 @@
 // =========================================================
 const siteConfig = {
     siteName: "Minh Trường",
-    username: "@minhtruong",
-    avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=300",
+    username: "@minhtruong06",
+    avatar: "https://cdn.phototourl.com/free/2026-08-26-68a0da81-fa3e-4454-9aab-223a48c42b93.jpg",
     bio: "Tổng hợp những sản phẩm công nghệ và setup góc học tập đáng mua nhất.",
     
     // Mạng xã hội (Nếu không dùng kênh nào, hãy để rỗng "")
     socials: {
-        tiktok: "https://tiktok.com",
-        facebook: "https://facebook.com",
-        instagram: "https://instagram.com",
+        tiktok: "https://www.tiktok.com/@minhtruong24z?_r=1&_t=ZS-99CLoN3DIee",
+        facebook: "",
+        instagram: "",
         youtube: "" 
     }
 };
