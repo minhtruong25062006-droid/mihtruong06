@@ -2,21 +2,22 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Top sản phẩm đáng mua</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    
+    <!-- SEO & Meta Tags -->
+    <title>Góc Đồ Hay | Top sản phẩm đáng mua</title>
     <meta name="description" content="Khám phá các sản phẩm công nghệ, gaming, gia dụng và những món đồ hữu ích đáng để bạn tham khảo.">
     
-    <!-- Open Graph SEO -->
-    <meta property="og:title" content="Top sản phẩm đáng mua">
-    <meta property="og:description" content="Tổng hợp những sản phẩm hữu ích và đáng mua.">
+    <!-- Open Graph for Social Media -->
+    <meta property="og:title" content="Góc Đồ Hay | Top sản phẩm đáng mua">
+    <meta property="og:description" content="Khám phá các deal tốt nhất hôm nay!">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1200">
     
-    <!-- Google Fonts: Inter -->
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Boxicons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     
     <!-- CSS -->
@@ -24,7 +25,8 @@
 </head>
 <body>
     <div class="app-container">
-        <!-- Nút Dark Mode -->
+        
+        <!-- Dark Mode Toggle -->
         <button id="theme-toggle" class="theme-toggle" aria-label="Bật/Tắt giao diện tối">
             <i class='bx bx-moon'></i>
         </button>
@@ -32,30 +34,29 @@
         <!-- Profile Section -->
         <header class="profile-section">
             <div class="avatar-wrap">
-                <img id="profile-avatar" src="" alt="Avatar" class="avatar">
+                <img id="profile-avatar" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Avatar" class="avatar" width="104" height="104">
                 <div class="verified-badge" aria-label="Đã xác minh"><i class='bx bxs-badge-check'></i></div>
             </div>
-            <h1 id="profile-name">Tên thương hiệu</h1>
-            <p id="profile-username" class="username">@username</p>
-            <p id="profile-bio" class="bio">Mô tả ngắn gọn...</p>
+            <h1 id="profile-name"></h1>
+            <p id="profile-username" class="username"></p>
+            <p id="profile-bio" class="bio"></p>
             
-            <div class="social-links" id="social-container">
-                <!-- Social links render here -->
+            <div class="social-links" id="social-container" aria-label="Mạng xã hội">
+                <!-- Javascript sẽ điền icon vào đây -->
             </div>
         </header>
 
         <!-- Hero Section -->
         <section class="hero-section">
-            <h2>Những món đồ đáng mua mình đã chọn lọc 🔥</h2>
-            <p>Sản phẩm chất lượng cao, giá tốt và hữu ích cho góc học tập, làm việc.</p>
-            <button class="btn-primary" aria-label="Xem sản phẩm nổi bật" onclick="document.getElementById('main-content').scrollIntoView({behavior: 'smooth'})">
-                🔥 Xem sản phẩm nổi bật
-            </button>
+            <h2 id="hero-title"></h2>
+            <p id="hero-desc"></p>
+            <button class="btn-primary" id="hero-btn" aria-label="Xem sản phẩm nổi bật"></button>
         </section>
 
         <!-- Main Content -->
         <main id="main-content">
-            <!-- Search Box -->
+            
+            <!-- Search -->
             <div class="search-container">
                 <i class='bx bx-search search-icon'></i>
                 <input type="text" id="search-input" placeholder="Tìm sản phẩm (vd: bàn phím, giá đỡ)..." aria-label="Tìm kiếm sản phẩm">
@@ -64,18 +65,18 @@
             <!-- Categories -->
             <nav class="category-nav" aria-label="Danh mục sản phẩm">
                 <ul class="category-list" id="category-container">
-                    <!-- Categories render here -->
+                    <!-- Javascript sẽ điền danh mục vào đây -->
                 </ul>
             </nav>
 
             <!-- Featured Product -->
-            <div id="featured-container" class="featured-wrapper">
-                <!-- Featured product render here -->
+            <div id="featured-container" class="featured-wrapper" aria-label="Sản phẩm nổi bật">
+                <!-- Javascript sẽ điền sản phẩm nổi bật vào đây -->
             </div>
 
             <!-- Product Grid -->
             <section class="product-grid" id="product-container" aria-label="Danh sách sản phẩm">
-                <!-- Products render here -->
+                <!-- Javascript sẽ điền danh sách sản phẩm vào đây -->
             </section>
 
             <!-- No Results -->
@@ -92,7 +93,7 @@
                 <li><i class='bx bx-check-circle'></i> Chọn lọc sản phẩm đáng chú ý</li>
                 <li><i class='bx bx-check-circle'></i> Ưu tiên sản phẩm có đánh giá tốt</li>
                 <li><i class='bx bx-check-circle'></i> Cập nhật sản phẩm thường xuyên</li>
-                <li><i class='bx bx-check-circle'></i> Dẫn link trực tiếp đến nơi bán để bạn tự kiểm tra</li>
+                <li><i class='bx bx-check-circle'></i> Dẫn link trực tiếp đến nơi bán chính hãng</li>
             </ul>
         </section>
 
@@ -102,7 +103,7 @@
                 <strong>Minh bạch:</strong> Một số liên kết trên trang có thể là liên kết tiếp thị liên kết (affiliate). Nếu bạn mua hàng thông qua liên kết, mình có thể nhận được một khoản hoa hồng nhỏ mà không làm tăng chi phí của bạn.
             </div>
             <p class="copyright">
-                &copy; <span id="current-year"></span> <span id="footer-name"></span>. Designed for Mobile.
+                &copy; <span id="current-year"></span> <span id="footer-name"></span>. Premium Bio Link.
             </p>
         </footer>
 
@@ -110,9 +111,10 @@
         <button id="back-to-top" class="back-to-top" aria-label="Lên đầu trang">
             <i class='bx bx-up-arrow-alt'></i>
         </button>
+        
     </div>
 
-    <!-- JavaScript -->
+    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>
