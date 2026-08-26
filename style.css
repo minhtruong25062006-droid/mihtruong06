@@ -2,7 +2,7 @@
    VARIABLES & THEMES
    ========================================================= */
 :root {
-    /* Light Theme */
+    /* Giao diện Sáng */
     --bg-main: #f3f4f6;
     --bg-card: #ffffff;
     --text-primary: #111827;
@@ -15,7 +15,7 @@
     --featured-bg: linear-gradient(145deg, #ffffff, #eff6ff);
     --featured-border: #bfdbfe;
     
-    /* Shadows & Radius */
+    /* Box Shadow & Bo góc */
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -26,7 +26,7 @@
 }
 
 body.dark-theme {
-    /* Dark Theme */
+    /* Giao diện Tối */
     --bg-main: #111827;
     --bg-card: #1f2937;
     --text-primary: #f9fafb;
@@ -59,6 +59,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Hỗ trợ người dùng yêu cầu giảm hiệu ứng chuyển động */
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
         animation-duration: 0.01ms !important;
@@ -71,6 +72,8 @@ body {
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 button { font-family: inherit; }
+
+/* Focus State Accessibility */
 button:focus-visible, input:focus-visible, a:focus-visible {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
@@ -143,7 +146,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
     display: flex;
     line-height: 1;
 }
-.profile-section h1 { font-size: 22px; font-weight: 700; margin-top: 16px; letter-spacing: -0.3px; }
+.profile-section h1 { font-size: 22px; font-weight: 700; margin-top: 16px; letter-spacing: -0.3px; color: var(--text-primary); }
 .username { color: var(--text-secondary); font-size: 15px; margin-top: 2px; }
 .bio { font-size: 15px; margin-top: 12px; color: var(--text-secondary); padding: 0 10px; }
 
@@ -185,7 +188,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 .hero-section p { font-size: 14px; color: var(--text-secondary); margin-bottom: 20px; }
 .btn-primary {
     background: var(--primary-color);
-    color: #ffffff;
+    color: #ffffff; /* Luôn giữ chữ trắng trên nền xanh */
     border: none;
     padding: 14px 24px;
     border-radius: var(--radius-full);
@@ -447,7 +450,7 @@ footer {
 @media (hover: hover) { .back-to-top:hover { transform: translateY(-3px); } }
 
 /* =========================================================
-   RESPONSIVE QUERIES (320px - 430px)
+   RESPONSIVE QUERIES
    ========================================================= */
 @media (max-width: 430px) {
     .featured-card { flex-direction: column; }
