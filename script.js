@@ -94,7 +94,7 @@ const products = [
         featured: false,
         name: "[DỮ LIỆU DEMO] Đèn LED Bàn Học",
         description: "Chống cận, 3 chế độ sáng, bảo vệ mắt.",
-        image: "https://share.google/WdPQOUQCQPVqJ8lPv",
+        image: "https://rangdongstore.vn/den-led-ban-hoc-chong-can-5w-rd-rl-01v2-p-221223003139",
         price: "120.000đ",
         oldPrice: "180.000đ",
         discount: "-33%",
