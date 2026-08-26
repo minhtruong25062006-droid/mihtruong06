@@ -139,7 +139,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
     position: absolute;
     bottom: 4px;
     right: 4px;
-    color: #10b981;
+    color: #1877F2;
     background: var(--bg-card);
     border-radius: var(--radius-full);
     font-size: 24px;
