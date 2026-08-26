@@ -8,11 +8,11 @@
     --text-primary: #111827;
     --text-secondary: #4b5563;
     --border-color: #e5e7eb;
-    --primary-color: #2563eb;
-    --primary-hover: #1d4ed8;
+    --primary-color: #3b82f6;
+    --primary-hover: #2563eb;
     --accent-red: #ef4444;
     --star-color: #f59e0b;
-    --featured-bg: linear-gradient(145deg, #ffffff, #f0f9ff);
+    --featured-bg: linear-gradient(145deg, #ffffff, #eff6ff);
     --featured-border: #bfdbfe;
     
     /* Shadows & Radius */
@@ -181,7 +181,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border-color);
 }
-.hero-section h2 { font-size: 20px; margin-bottom: 12px; line-height: 1.4; letter-spacing: -0.3px; }
+.hero-section h2 { font-size: 20px; margin-bottom: 12px; line-height: 1.4; letter-spacing: -0.3px; color: var(--text-primary); }
 .hero-section p { font-size: 14px; color: var(--text-secondary); margin-bottom: 20px; }
 .btn-primary {
     background: var(--primary-color);
@@ -194,6 +194,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
     cursor: pointer;
     width: 100%;
     transition: var(--transition);
+    display: inline-block;
 }
 @media (hover: hover) { .btn-primary:hover { background: var(--primary-hover); } }
 .btn-primary:active { transform: scale(0.98); }
@@ -280,7 +281,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
 .p-img {
     position: relative;
     width: 100%;
-    padding-top: 100%; /* 1:1 Aspect ratio */
+    padding-top: 100%;
     background: var(--border-color);
     overflow: hidden;
 }
@@ -319,6 +320,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
     -webkit-box-orient: vertical;
     overflow: hidden;
     line-height: 1.4;
+    color: var(--text-primary);
 }
 .p-desc {
     color: var(--text-secondary);
@@ -391,7 +393,7 @@ button:focus-visible, input:focus-visible, a:focus-visible {
     margin-top: 32px;
     border: 1px solid var(--border-color);
 }
-.trust-section h3 { font-size: 16px; margin-bottom: 16px; }
+.trust-section h3 { font-size: 16px; margin-bottom: 16px; color: var(--text-primary); }
 .trust-section ul { display: flex; flex-direction: column; gap: 12px; }
 .trust-section li {
     font-size: 14px; color: var(--text-secondary);
