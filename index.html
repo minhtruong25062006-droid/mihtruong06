@@ -2,14 +2,18 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
-    <title>Top sản phẩm đáng mua</title>
+    <!-- Viewport chuẩn, không khóa zoom để đảm bảo Accessibility -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Góc Đồ Hay | Top sản phẩm đáng mua</title>
     <meta name="description" content="Khám phá các sản phẩm công nghệ, gaming, gia dụng và những món đồ hữu ích đáng để bạn tham khảo.">
     
     <!-- Open Graph SEO -->
-    <meta property="og:title" content="Top sản phẩm đáng mua">
+    <meta property="og:title" content="Góc Đồ Hay | Top sản phẩm đáng mua">
     <meta property="og:description" content="Tổng hợp những sản phẩm hữu ích và đáng mua.">
     <meta property="og:type" content="website">
+    <!-- Bạn có thể thay link ảnh xem trước khi share web vào đây -->
+    <meta property="og:image" content="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1200">
     
     <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,12 +27,12 @@
 <body>
     <div class="app-container">
         
-        <!-- Dark Mode Toggle -->
+        <!-- Nút Dark Mode -->
         <button id="theme-toggle" class="theme-toggle" aria-label="Bật/Tắt giao diện tối">
             <i class='bx bx-moon'></i>
         </button>
 
-        <!-- Profile Section -->
+        <!-- Khu vực Profile -->
         <header class="profile-section">
             <div class="avatar-wrap">
                 <img id="profile-avatar" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Avatar" class="avatar" width="104" height="104">
@@ -39,44 +43,44 @@
             <p id="profile-bio" class="bio"></p>
             
             <div class="social-links" id="social-container" aria-label="Mạng xã hội">
-                <!-- Javascript sẽ điền icon vào đây -->
+                <!-- Javascript sẽ render các icon MXH vào đây -->
             </div>
         </header>
 
-        <!-- Hero Section -->
+        <!-- Khu vực Hero -->
         <section class="hero-section">
             <h2 id="hero-title"></h2>
-            <p id="hero-description"></p>
-            <button id="hero-button" class="btn-primary" aria-label="Xem sản phẩm nổi bật"></button>
+            <p id="hero-desc"></p>
+            <button id="hero-btn" class="btn-primary" aria-label="Xem sản phẩm nổi bật"></button>
         </section>
 
-        <!-- Main Content -->
+        <!-- Khu vực Nội dung chính -->
         <main id="main-content">
             
-            <!-- Search -->
+            <!-- Tìm kiếm -->
             <div class="search-container">
                 <i class='bx bx-search search-icon'></i>
                 <input type="text" id="search-input" placeholder="Tìm sản phẩm (vd: bàn phím, giá đỡ)..." aria-label="Tìm kiếm sản phẩm">
             </div>
 
-            <!-- Categories -->
+            <!-- Danh mục -->
             <nav class="category-nav" aria-label="Danh mục sản phẩm">
                 <ul class="category-list" id="category-container">
-                    <!-- Javascript sẽ điền danh mục vào đây -->
+                    <!-- Javascript sẽ render danh mục vào đây -->
                 </ul>
             </nav>
 
-            <!-- Featured Product -->
+            <!-- Sản phẩm nổi bật -->
             <div id="featured-container" class="featured-wrapper" aria-label="Sản phẩm nổi bật">
-                <!-- Javascript sẽ điền sản phẩm nổi bật vào đây -->
+                <!-- Javascript sẽ render sản phẩm featured=true vào đây -->
             </div>
 
-            <!-- Product Grid -->
+            <!-- Danh sách sản phẩm -->
             <section class="product-grid" id="product-container" aria-label="Danh sách sản phẩm">
-                <!-- Javascript sẽ điền danh sách sản phẩm vào đây -->
+                <!-- Javascript sẽ render sản phẩm vào đây -->
             </section>
 
-            <!-- No Results -->
+            <!-- Thông báo không có kết quả -->
             <div id="no-result" class="no-result hidden">
                 <i class='bx bx-box'></i>
                 <p>Không tìm thấy sản phẩm phù hợp.</p>
@@ -100,7 +104,7 @@
                 <strong>Minh bạch:</strong> Một số liên kết trên trang có thể là liên kết tiếp thị (affiliate). Nếu bạn mua hàng thông qua liên kết, mình có thể nhận được một khoản hoa hồng nhỏ mà không làm tăng chi phí của bạn.
             </div>
             <p class="copyright">
-                &copy; <span id="current-year"></span> <span id="footer-name"></span>. Premium Bio Link.
+                &copy; <span id="current-year"></span> <span id="footer-name"></span>. Tối ưu cho Mobile.
             </p>
         </footer>
 
